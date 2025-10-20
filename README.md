@@ -1,6 +1,11 @@
 ## Hi there 👋
 
-hi hello im prabu
+My name is Prabu Ramanababu
+
+I am a computer science and math major
+
+I will graduate in 2029
+
 <!--
 **prpr00007/prpr00007** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
