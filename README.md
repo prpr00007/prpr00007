@@ -2,7 +2,7 @@
 
 My name is Prabu Ramanababu
 
-I am a computer science and math major
+I am a computer science and Finance major
 
 I will graduate in 2029
 
