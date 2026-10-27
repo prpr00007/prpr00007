@@ -10,19 +10,19 @@ CS and Business Administration (Finance) at Northeastern University, John Martin
 
 ### Featured projects
 
-#### Kalshi RFQ Market-Making Bot
-An automated market maker trading real capital on Kalshi, a CFTC-regulated exchange.
+#### [Kalshi RFQ Market-Making Bot](https://github.com/prpr00007/kalshi-rfq-bot-writeup)
+An automated market maker for multi-leg combo contracts on Kalshi, a CFTC-regulated exchange, piloted live with real capital.
 
-- Quotes both sides of multi-leg combo RFQs at ~5,000 requests/min, running 24/7 with Prometheus and Grafana monitoring
+- Reads a feed that peaks at ~5,000 messages/s and prices ~2,000 combo RFQs a minute at ~2 ms each, with Prometheus and Grafana monitoring
 - Prices correlated parlays with a Gaussian copula fitted on 43,000+ settled windows and 100,000-path Monte Carlo
-- Async event-driven engine confirms fills in ~50 ms, with layered risk controls and automatic reconciliation
-- Validated through historical replay, shadow quoting, and paper trading; CI runs 67 unit tests and a replay regression
+- Async event-driven engine confirms fills in a median 49 ms, with layered risk controls and reconciliation with the exchange every 30 s
+- Validated through historical replay, locked-policy shadow quoting, and paper trading; CI runs 70 tests, including a replay of real recorded feed
 
-*The source is private because the bot trades live capital.*
+*The source is private because the bot trades real money; the link goes to a write-up.*
 
 `Python` `asyncio` `NumPy` `SQLite` `Docker` `Prometheus` `Grafana`
 
-#### [Scriptiq](https://github.com/prpr00007/Scriptiq)
+#### [Scriptiq](https://github.com/prpr00007/scriptiq-writeup)
 A full-stack manga localization tool. It finds the speech bubbles on a page, reads the Japanese, translates it with a vision LLM that sees the whole page, and typesets the English back into the art.
 
 - The LLM works out who is speaking in each bubble and keeps a per-series memory of characters, glossary, and running jokes
